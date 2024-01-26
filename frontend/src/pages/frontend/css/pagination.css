@@ -1,0 +1,51 @@
+.pagination-container .pagination {
+    background-color: #f8f9fa; /* Màu nền nhạt cho thanh phân trang */
+    border-radius: 20px; /* Làm tròn góc */
+    padding: 8px; /* Khoảng cách bên trong */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+  }
+  
+  .pagination-container .page-item .page-link {
+    color: #007bff; /* Màu chữ */
+    background-color: transparent; /* Màu nền trong suốt cho các nút */
+    border: none; /* Bỏ viền */
+  }
+  
+  .pagination-container .page-item.active .page-link {
+    background-color: #007bff; /* Màu nền cho nút trang hiện tại */
+    color: white; /* Màu chữ cho nút trang hiện tại */
+  }
+  
+  .pagination-container .page-item.disabled .page-link {
+    color: #6c757d; /* Màu chữ cho nút disabled */
+  }
+/* Tùy chỉnh thêm cho nút khi hover */
+.pagination-container .page-item .page-link:hover {
+    color: white; /* Màu chữ khi hover */
+    background-color: #0056b3; /* Màu nền khi hover */
+    border-color: #0056b3; /* Màu viền khi hover */
+  }
+  
+  /* Tùy chỉnh cho nút disabled */
+  .pagination-container .page-item.disabled .page-link {
+    pointer-events: none; /* Không cho phép sự kiện chuột */
+    color: #ccc; /* Màu chữ cho nút disabled */
+  }
+  
+  /* Tùy chỉnh khoảng cách giữa các nút */
+  .pagination-container .page-link {
+    margin: 0 4px; /* Khoảng cách ngang */
+  }
+  
+  /* Tùy chỉnh để loại bỏ viền xung quanh khi active hoặc focus */
+  .pagination-container .page-link:focus, .pagination-container .page-link:active {
+    box-shadow: none; /* Loại bỏ bóng khi focus hoặc active */
+    outline: none; /* Loại bỏ viền khi focus */
+  }
+  
+  /* Thêm chút padding cho nút để tăng kích thước click */
+  .pagination-container .page-link {
+    padding: .5rem .75rem; /* Padding */
+  }
+  
+  
